@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+/* I prefer SCSS */
+
+body, html {
+    margin: 0;
+}
+
+body {
+    background-color: #1e1f2C;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    background-color: #2d294f;
+    border-bottom: 2px solid #342c6b;
+    transition: .14s all;
+    padding: .2rem .4rem;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem;
+    color: #f3f3f3;
+    font-size: .84rem;
+    outline: none;
+}
+
+input[type="range"] {
+    transform: translateY(.5rem);
+}
+
+h1, h2 {
+    color: #52af7e;
+    text-align: center;
+}
+
+input:hover {
+    border-bottom-color: #4f4d32;
+}
+
+input:focus {
+    border-bottom-color: #2e424e;
+}
+
+a {
+    color: #cdb239;
+}
+
+a:hover {
+    color: #edd249;
+}
+
+.side-by-side > div {
+    position: relative;
+    display:flex;
+}
+
+.side-by-side > div > div {
+    width: calc(50% - 1px);
+    display: inline-block;
+    padding: .1rem .5rem;
+    margin: .3rem 0;
+}
+
+.side-by-side > div :first-child {
+    border-right: 1px #2d294f solid;
+    text-align: right;
+    color: #d8689d;
+}
+
+.side-by-side > div:nth-child(even) :first-child {
+    color: #d89d68;
+}
+
+.side-by-side > div :last-child {
+    border-left: 1px #2d294f solid;
+}
+
+.side-by-side > div:nth-child(even) :last-child {
+    color: #a1e1e1;
+}
+
+.page {
+    width: 40%;
+    margin: 2rem auto;
+}
+
+.steps {
+    border: 2px #2d294f solid;
+    padding: 2px;
+}
+
+.step {
+    padding: .2rem .5rem;
+    color: #528bff;
+    height: 1.2rem;
+}
+
+.step.question {
+    background-color: #2d294f;
+}
+
+.step.previous {
+    background-color: #342c6b;
+}
+
+.step.current {
+    background-color: #2e424e;
+}
+
+.step.question:hover {
+    background-color: #4f4d32;
+    cursor: pointer;
+}
+
+.step.question.future:hover {
+    background-color: #44233d;
+    cursor: default;
+}
+
+.form .progress {
+    position: relative;
+    height: 2rem;
+    border-top: 2px solid #2d294f;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.form .progress > div {
+    width: 30%;
+    position: absolute;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: .4rem;
+    color: #4072ff;
+    background-color: #2d294f;
+    border: 2px solid #342c6b;
+    cursor: pointer;
+    transition: .14s all;
+}
+
+.form .progress :last-child {
+    right: 0;
+    color: #52af7e;
+    border-color: #52af7e;
+}
+
+.form .progress > div:hover {
+    border-color: #afae42;
+    color: #afae42;
+    background-color: #4f4d32;
+}
